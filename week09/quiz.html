@@ -1,244 +1,181 @@
 <html>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <style>
-      body {
-        background-color: #efefef;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- top picture -->
-    <div>
-      <div
-        style="
-          height: 200px;
-          background-size: cover;
-          background-image: url('https://raw.githubusercontent.com/arc6828/SCS211/main/week09/img/room-6.jpg');
-        "
-      ></div>
-    </div>
-    <!-- Hotel Information -->
-    <div
-      style="
-        height: 200;
-        background-color: lightgray;
-        margin-inline: 20px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #efefef;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .icon-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+
+    .icon {
+      text-align: center;
+    }
+
+    .icon i {
+      font-size: 30px;
+      color: red;
+
+    }
+
+    .divider {
+      border-bottom: 1px solid #ccc;
+      margin-left: auto;
+      margin-right: auto;
+      width: 98%;
+
+    }
+
+    .divider1 {
+      border-bottom: 1px solid #ccc;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div style="
+    height: 100%;
+    background-size: cover;
+    background-image: url('https://raw.githubusercontent.com/arc6828/SCS211/main/week09/img/room-6.jpg');
+  "></div>
+  <div style="
+        background-color:floralwhite;
+        padding: 20px;
+        margin: 20px;
         margin-top: -30px;
-      "
-    >
-      <div style="font-size: 30px">Hilton San Francisco</div>
-      <div style="display: flex; flex-direction: row">
-        <div style="font-size: 15px">
-          <i class="bi bi-star-fill" style="color: yellow"></i>
-          <i class="bi bi-star-fill" style="color: yellow"></i>
-          <i class="bi bi-star-fill" style="color: yellow"></i>
-          <i class="bi bi-star-fill" style="color: yellow"></i>
-          <i class="bi bi-star-half" style="color: yellow"></i>
-        </div>
-      </div>
-      <div style="text-align: center; font-size: 20ps; color: gray">
-        Facilities provided may range from a modest quality mattress in a small
-        room to large sites
-      </div>
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 20px;
+      ">
+    <span style="display: flex; justify-content: center; font-size: 30px">Hilton San Francisco</span>
+    <div style="color: black; display: flex; justify-content: center">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-half"></i>
     </div>
-    <!-- score -->
-    <div
-      style="
-        margin-inline: 20px;
-        justify-content: flex-start;
-        display: flex;
-        flex-direction: row;
-        margin-block: 30px;
-      "
-    >
-      <div
-        style="
-          width: 80px;
-          height: 80;
-          background-color: tomato;
-          border-radius: 40px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-right: 10px;
-          color: white;
-        "
-      >
-        9.5
-      </div>
-      <div>
-        <div style="font-size: 30px; color: gray">Excellent</div>
-        <div style="font-size: 20px">See 801 reviews</div>
-      </div>
-    </div>
-    <!-- Hotel Description -->
-    <div
-      style="
-        margin-inline: 20px;
-        justify-content: flex-start;
-        display: flex;
-        flex-direction: column;
-        margin-block: 30px;
-      "
-    >
-      <div><hr /></div>
-      <div style="font-size: 30px">Hotel Description</div>
-      <div style="font-size: 20px">
-        218 Austen Mountain, consectetur adipiscing sed do eiusmod tempor
-        indididunt ut labore et…
-      </div>
-      <div><hr /></div>
-    </div>
-    <!-- icon -->
-    <div
-      style="
-        margin-inline: 20px;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-      "
-    >
-      <div>
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-          "
-        >
-          <i class="bi bi-wifi" style="color: rgb(0, 132, 255)"></i>
-        </div>
-        <div style="color: gray; font-size: 15px; text-align: center">wifi</div>
-      </div>
-      <div>
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-          "
-        >
-          <i class="bi bi-cup-fill" style="color: rgb(0, 132, 255)"></i>
-        </div>
-        <div style="color: gray; font-size: 15px; text-align: center">
-          coffe
-        </div>
-      </div>
-      <div>
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-          "
-        >
-          <i class="bi bi-archive" style="color: rgb(0, 132, 255)"></i>
-        </div>
-        <div style="color: gray; font-size: 15px; text-align: center">bath</div>
-      </div>
-      <div>
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-          "
-        >
-          <i class="bi bi-car-front-fill" style="color: rgb(0, 132, 255)"></i>
-        </div>
-        <div style="color: gray; font-size: 15px; text-align: center">car</div>
-      </div>
-      <div>
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-          "
-        >
-          <i class="bi bi-fingerprint" style="color: rgb(0, 132, 255)"></i>
-        </div>
-        <div style="color: gray; font-size: 15px; text-align: center">pet</div>
-      </div>
-    </div>
-    <!-- Location -->
-    <div
-      style="
-        margin-inline: 20px;
-        justify-content: flex-start;
-        display: flex;
-        flex-direction: column;
-      "
-    >
-      <div><hr /></div>
-      <div style="font-size: 30px">Location</div>
-      <div style="font-size: 20px">
-        218 Austen Mountain, consectetur adipiscing sed do eiusmod tempor
-        indididunt ut labore et…
-      </div>
-      <div>
-        <img style="width: 100%;" src="https://raw.githubusercontent.com/arc6828/SCS211/main/week09/img/map.jpg " />
-      </div>
-      <div><hr /></div>
-    </div>
-    <!-- Room Type -->
-    <div
-      style="
-        margin-inline: 20px;
-        justify-content: flex-start;
-        display: flex;
-        flex-direction: column;
-      "
-    >    
-      <div style="font-size: 30px">Room Type</div>
-      <div style="display: flex; flex-direction: row;">
-        <div style="margin-block: 10px;margin-right: 10px;">
-            <img style="width: 150px; height: 150px;border-radius: 10px;" src="https://raw.githubusercontent.com/arc6828/SCS211/main/week09/img/room-8.jpg " />
-        </div>
-        <div style="display: flex; flex-direction: column;justify-content: space-between;margin-block: 10px;">
-            <div>Standard Twin Room</div>
-            <div>
-                <div style="color: tomato;font-size: 40px;">$399.99</div>
-                <div style="color: gray;font-size: 15px;">Hurry Up! This is your last room!</div>
-            </div>
-        </div>
+    <span style="color: gray; display: flex; justify-content: center">Facilities provided may range from a modest
+      quality mattress in a small room to large sites
+      Rating & Review
+
+  </div>
+
+  <div>
+    <div style="display: flex; flex-direction: row; padding: 10px;">
+      <div style="border-radius: 50px; background-color: black; padding: 15px;">
+        <p style="color: white; margin: 0;">9.5</p>
       </div>
 
-      <div><hr /></div>
-    </div>
-    <!-- Booking -->
-    <div
-      style="
-        margin-inline: 20px;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-      "
-    >    
-            <div>
-                <div style="font-size: 15px;">Price</div>
-                <div style="color: tomato;font-size: 40px;">$399.99</div>
-                <div style="font-size: 20px;">AVG/Night</div>
-            </div>
-            <div style="width: 170px;height: 80px;border-radius: 15px;background-color: tomato;color: white;display: flex;justify-content: center;align-items: center;">
-                Book Now
-            </div>
+      <!-- View2 -->
+      <div style="padding-left: 10px;">
+        <div style="font-size: 20px; color: black">Excellent</div>
+        <div style="color: darkgray">See 801 reviews</div>
       </div>
-  </body>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div style="flex: 1; margin-top: 10px; margin-left: 20;">
+    <h2 style="font-size: 20px;">
+      Hotel Description
+    </h2>
+    <p class="fs-6">
+      218 Austen Moutntain, consectetur adipiscing, sed eiusmod tempor incididunt ut labore et dolore
+    </p>
+  </div>
+  </div>
+  <div class="divider"></div>
+  </div>
+  <div class="icon-container">
+    <div class="icon">
+      <i class="bi bi-router" style="font-size: 30px; color: black;"></i>
+      <p>WiFi</p>
+    </div>
+    <div class="icon">
+      <i class="bi bi-cup-hot-fill" style="font-size: 30px; color: black;"></i>
+      <p>Coffee</p>
+    </div>
+    <div class="icon">
+      <i class="bi bi-buildings-fill" style="font-size: 30px; color: black;"></i>
+      <p>Bath</p>
+    </div>
+    <div class="icon">
+      <i class="bi bi-ev-front-fill" style="font-size: 30px; color: black;"></i>
+      <p>Car</p>
+    </div>
+    <div class="icon">
+      <i class="bi bi-controller" style="font-size: 30px; color: black;"></i>
+      <p>Game</p>
+    </div>
+  </div>
+  <div class="divider"></div>
+
+  <div style="flex: 1; margin-top: 10px; margin-left: 20;">
+    <h2 style="font-size: 20px;">Location</h2>
+    <p>
+      218 Austen Mountain, consectetur adipiscing,
+      sed do eiusmod tempor incididunt ut labore et…
+    </p>
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+      <img style="width: 100%; border-radius: 10px;"
+        src="https://raw.githubusercontent.com/arc6828/SCS211/main/week09/img/map.jpg" />
+    </div>
+  </div>
+
+
+  </div>
+  <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; ">
+    <div>
+      <strong>
+        <p>
+          Room Type
+        </p>
+      </strong>
+      <img style="width: 100px; height: 150px; border-radius: 10px;"
+        src="https://raw.githubusercontent.com/arc6828/SCS211/main/week09/img/room-8.jpg" alt="Room 8" />
+    </div>
+
+    <div
+      style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;  margin-top: 50px;">
+      <p style="font-size: 15px; margin-left: 10px; margin-top: 20px;"><strong>Standard Twin Room</strong></p>
+      <p style="color: red;  margin-left: 10px;">$399.99</p>
+      <p style="font-size: 10px; color: blue; margin-left: 10px; margin-bottom: 20px;">Hurry Up! This is your last room!
+      </p>
+    </div>
+  </div>
+  </div>
+<br>
+  <div class="divider1"></div>
+
+  <div style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 20px;">
+    <!-- View1 -->
+    <div style="display: flex; flex-direction: column;">
+      <p class="fs-6">Price</p>
+      <p class="fs-2" style="color: red;">$399.99</p>
+      <p class="fs-6">AVG/Night</p>
+    </div>
+    <!-- View2 -->
+    <div style="display: flex; align-items: center;">
+      <button class="btn btn-danger">Book Now</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
 </html>
