@@ -1,0 +1,25 @@
+<script>
+ 
+
+    function rectArea({width=5,height=5}={}){return width*height;} console.log(rectArea({width:3,height:30}));
+
+    var my1 = 'if you havn\'t money \
+               you will pay';
+    var my2 = 'Hello' + 
+              ' world' ;
+    phrase = `${my1} what ${my2}!`
+    console.log(my1);
+    console.log(my2);
+    console.log(phrase);
+
+    let arr = [1,2,3]
+    let dupArr = arr.map(function(n){ return n*2})
+    let evenArr = arr.filter(function(n){return n%2===0})
+    let sum = arr.reduce(function(sumSo,n){ return sumSo+n})
+    console.log(dupArr)
+    console.log(evenArr)
+    console.log(sum)
+
+    let list = [1,2,'three','cztery']
+    for (let el of list){console.log(el)}
+</script>

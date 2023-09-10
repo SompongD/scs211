@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <script>
+            function sumAll(num){
+                var total = 0;
+                for (var i=0;i<num.length;i++){
+                    total+=num[i];
+                }
+            }        
+            console.log(sumAll(1,2,3,4,5,6));
+
+            function power({base=4,power=3}={}){
+                return Math.pow(base,power);
+            }
+            console.log(power());
+        </script>
+    </body>
+</html>
